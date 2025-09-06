@@ -28,7 +28,7 @@ public class FirmwareInfoUtils {
     private static String TAG = "FirmwareInfoUtils";
 
     public static String getEnsoVersion() {
-        int prop = PropUtils.getInt("ro.tukios.version", 0);
+        int prop = PropUtils.getInt("ro.shineui.version", 0);
 
         if (prop != 0) {
             return prop / 10000 + "." + (prop % 10000) / 100 + "." + (prop % 1000) / 100;
@@ -74,7 +74,7 @@ public class FirmwareInfoUtils {
     }
 
     public static String getROMVersion() {
-        int prop = PropUtils.getInt("ro.tukios.version", 0);
+        int prop = PropUtils.getInt("ro.shineui.version", 0);
 
         if (prop != 0) {
             return prop / 10000 + "." + (prop % 10000) / 100 + "." + (prop % 1000) / 100;
